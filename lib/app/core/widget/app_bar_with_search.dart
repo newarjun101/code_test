@@ -1,6 +1,7 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mm_it_code_test/app/core/utils/default_value.dart';
 import 'package:mm_it_code_test/app/core/utils/size_config.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,9 +24,10 @@ class AppBarWithSearch extends StatelessWidget with PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
-      title: Text("$title"),
+      title: Text("$title",style: TextStyle(color: Colors.grey,fontSize: dExtraLargeFontSize15.sp),),
       leading: Icon(
         Icons.search,
+        color: Colors.grey,
         size: 30.sp,
       ),
       actions: [
@@ -38,7 +40,7 @@ class AppBarWithSearch extends StatelessWidget with PreferredSizeWidget {
                 bottom: 2,
                 right: 0,
                 child: SvgPicture.asset(rightIcon,
-                    width: 28, height: 28, color: Colors.black),
+                    width: 28, height: 28, color: Colors.grey,),
               ),
               Positioned(
                 bottom: 8,
@@ -71,7 +73,7 @@ class AppBarWithSearch extends StatelessWidget with PreferredSizeWidget {
                 bottom: 2,
                 right: 4,
                 child: SvgPicture.asset(endIcon,
-                    width: 28, height: 28, color: Colors.black),
+                    width: 28, height: 28,  color: Colors.grey,),
               ),
 
               Positioned(

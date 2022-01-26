@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: StyleTheme().getTheme(),
       debugShowCheckedModeBanner: false,
        getPages: RoutePage().routePage,
-      initialRoute: '/product-detail',
+      initialRoute: '/',
     );
   }
 }

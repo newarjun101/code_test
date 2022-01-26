@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:mm_it_code_test/app/ui/cart/view/card_main.dart';
+import 'package:mm_it_code_test/app/ui/cart/view/cart_main.dart';
 import 'package:mm_it_code_test/app/ui/feature_main/controller/feature_main_controller.dart';
 import 'package:mm_it_code_test/app/ui/home/view/home_main.dart';
 import 'package:mm_it_code_test/app/ui/more/view/more_main.dart';
@@ -21,8 +21,8 @@ class FeatureMain extends StatelessWidget {
         builder: () => Obx(() => Scaffold(
               body: IndexedStack(
                 children: const [
-                  HomeMain(),
                   CartMain(),
+                  HomeMain(),
                   SearchMain(),
                   ProfileMain(),
                   MoreMain()

@@ -31,4 +31,4 @@ const Color secondaryColor = Color(0xff008c95);
 // color explanation will come here
 const Color onSecondary = Color(0xffec6660);
 // color explanation will come here
-const Color scaffoldBackgroundColor =  Color(0xffF7FBFC);
+const Color scaffoldBackgroundColor =  Color(0xfff1f1f1);
