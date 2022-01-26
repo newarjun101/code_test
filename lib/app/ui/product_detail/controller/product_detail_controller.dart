@@ -27,4 +27,10 @@ class ProductDetailController extends GetxController {
     addToCartItem++;
     print(addToCartItem);
   }
+
+
 }
+
+// String x = "Stephen Ricard";
+// String[] nameparts = x.split(" ");
+// String initials = nameparts[0].charAt(0).toUpperCase()+nameparts[1].charAt(0).toUpperCase();
