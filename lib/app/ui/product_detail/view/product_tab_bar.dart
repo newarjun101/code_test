@@ -20,7 +20,7 @@ List<String> size = ["5.6", "5.8", "7.0", "7.7"];
 List<ReviewModel> mReviewList = [
   ReviewModel(
       id: 1,
-      name: "Nolan",
+      name: "Batman",
       comment: "This proudct is one of the best project =",
       date: "25 Jan 2022",
       image: [
@@ -36,7 +36,7 @@ List<ReviewModel> mReviewList = [
       rating: 4),
   ReviewModel(
       id: 1,
-      name: "Nolan",
+      name: "SuperMan",
       comment: "This proudct is one of the best project =",
       date: "25 Jan 2022",
       image: [
@@ -48,7 +48,7 @@ List<ReviewModel> mReviewList = [
       rating: 3),
   ReviewModel(
       id: 1,
-      name: "Nolan",
+      name: "Iron Man",
       comment: "This proudct is one of the best project someting test",
       date: "25 Jan 2022",
       image: [
@@ -99,7 +99,6 @@ Widget productTabBar(
           //Add this to give height
 
           child: TabBarView(children: [
-
             productTabView(context, productDetailController),
             const Text("No Data Here"),
             reviewTabView(context, productDetailController),
@@ -270,7 +269,8 @@ Widget reviewTabView(context, ProductDetailController productDetailController) {
               child: Padding(
                 padding: const EdgeInsets.all(24.0),
                 child: Text(
-                  "HE",
+                  "${mReviewList[position].name[0]}${mReviewList[position].name[1]}"
+                      .toUpperCase(),
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: dExtraLargeFontSize16.sp,

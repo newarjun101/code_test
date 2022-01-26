@@ -17,7 +17,10 @@ class HomeMain extends StatelessWidget {
       backgroundColor: Colors.transparent,
       appBar: AppBarWithSearch(sizeConfig: _sizeConfig, leftIcon: "assets/images/search.svg",
         rightIcon: "assets/images/chat.svg", endIcon: "assets/images/notification.svg", title: 'Home',),
-      body: SingleChildScrollView(child: homeMainBuildBody(context))
+      body: SingleChildScrollView(child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: homeMainBuildBody(context),
+      ))
     );
   }
 }

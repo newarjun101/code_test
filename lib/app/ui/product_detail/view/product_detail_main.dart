@@ -17,7 +17,6 @@ class ProductDetailMain extends StatelessWidget {
     return  ScreenUtilInit(
       builder: () {
         return  Scaffold(
-          backgroundColor: Color(0xffeaeaea),
           appBar: AppBarWithBackArrow(endIcon: 'assets/images/cart.svg',title: "Product Detail",itemCount: productDetailController.addToCartItem),
           body: Padding(
             padding: const EdgeInsets.only(left: 8,right: 8),
